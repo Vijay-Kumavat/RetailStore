@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "391e2d64-73ff-4cd6-8a61-9796de8c4471",
+		"name": "Retail Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19545165"
+	},
+	"item": [
+		{
+			"name": "Optimize Inventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"popularityData\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"popularityScore\": 0.8\r\n        }\r\n    ],\r\n    \"shelfLifeData\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"shelfLife\": 30\r\n        }\r\n    ],\r\n    \"currentInventory\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"currentStock\": 100\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7145/api/retailstore/optimizeinventory",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"api",
+						"retailstore",
+						"optimizeinventory"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"popularityData\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"popularityScore\": 0.8\r\n        }\r\n    ],\r\n    \"shelfLifeData\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"shelfLife\": 30\r\n        }\r\n    ],\r\n    \"currentInventory\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"currentStock\": 100\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7145/api/retailstore/optimizeinventory",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7145",
+							"path": [
+								"api",
+								"retailstore",
+								"optimizeinventory"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jul 2024 11:46:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"productID\": \"123\",\n        \"recommendedAdjustment\": -19\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Pricing Trick",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"competitorPrices\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"price\": 15\r\n        },\r\n        {\r\n            \"productID\": \"456\",\r\n            \"price\": 25\r\n        }\r\n    ],\r\n    \"demandTrends\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"trend\": \"increasing\"\r\n        },\r\n        {\r\n            \"productID\": \"456\",\r\n            \"trend\": \"decreasing\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7145/api/retailstore/pricingtrick",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"api",
+						"retailstore",
+						"pricingtrick"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"competitorPrices\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"price\": 15\r\n        },\r\n        {\r\n            \"productID\": \"456\",\r\n            \"price\": 25\r\n        }\r\n    ],\r\n    \"demandTrends\": [\r\n        {\r\n            \"productID\": \"123\",\r\n            \"trend\": \"increasing\"\r\n        },\r\n        {\r\n            \"productID\": \"456\",\r\n            \"trend\": \"decreasing\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7145/api/retailstore/pricingtrick",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7145",
+							"path": [
+								"api",
+								"retailstore",
+								"pricingtrick"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jul 2024 11:47:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"productID\": \"123\",\n        \"price\": 16.5\n    },\n    {\n        \"productID\": \"456\",\n        \"price\": 22.5\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Smart Restock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"productID\": \"123\",\r\n        \"quantitySold\": 10,\r\n        \"timestamp\": \"2024-06-01T10:00:00\"\r\n    },\r\n    {\r\n        \"productID\": \"456\",\r\n        \"quantitySold\": 20,\r\n        \"timestamp\": \"2024-06-02T11:30:00\"\r\n    },\r\n    {\r\n        \"productID\": \"123\",\r\n        \"quantitySold\": 15,\r\n        \"timestamp\": \"2024-06-03T09:45:00\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7145/api/retailstore/smartrestock",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"api",
+						"retailstore",
+						"smartrestock"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"productID\": \"123\",\r\n        \"quantitySold\": 10,\r\n        \"timestamp\": \"2024-06-01T10:00:00\"\r\n    },\r\n    {\r\n        \"productID\": \"456\",\r\n        \"quantitySold\": 20,\r\n        \"timestamp\": \"2024-06-02T11:30:00\"\r\n    },\r\n    {\r\n        \"productID\": \"123\",\r\n        \"quantitySold\": 15,\r\n        \"timestamp\": \"2024-06-03T09:45:00\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7145/api/retailstore/smartrestock",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7145",
+							"path": [
+								"api",
+								"retailstore",
+								"smartrestock"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jul 2024 13:49:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"productID\": \"123\",\n        \"recommendedQuantity\": 24\n    },\n    {\n        \"productID\": \"456\",\n        \"recommendedQuantity\": 20\n    }\n]"
+				}
+			]
+		}
+	]
+}
